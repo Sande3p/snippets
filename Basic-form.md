@@ -10,6 +10,16 @@
     </div>
     
     <div className="form-group">
+      <label className="required" htmlFor="st">Project Title</label>
+      <div className="v">
+        <input type="text" className="input-text" id="st" placeholder="Sort Title" />
+      </div>
+      <div className="v">
+        <textarea className="input-text textarea" id="legal" placeholder="If yes, please explain… "></textarea>
+      </div>
+    </div>
+    
+    <div className="form-group">
       <label htmlFor="td">Required Due Date/ Estimated Timeline</label>
       <div className="v">
         <DatePicker selected={this.state.targetDate} onChange={this.handleChange} className="input-text datepicker" placeholderText="Target Date" />
@@ -21,7 +31,7 @@
       <div className="v">
         <Select name="form-field-name" value={this.state.functionalArea} options={functionalAreaOptions} onChange={this.functionalAreaChange} placeholder="Request Origin" className="input-select" />
       </div>
-  </div>
+    </div>
 </form>
 ```
 
