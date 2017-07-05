@@ -54,15 +54,15 @@
 ## Radio
 
 ```html
-<label className="check-ctrl">
+<label className="radio-ctrl">
   <input type="radio" name="window" value={this.state.isOpen} defaultChecked={isOpen}/>
   <span className="tx">Remember Password</span>
 </label>
 ```
 
 ```css
-/* check-ctrl */
-.check-ctrl {
+/* radio-ctrl */
+.radio-ctrl {
   position: relative;
   input[type="radio"] {
     position: absolute;
